@@ -1,0 +1,14 @@
+# Program: A Basic Calculator built with Python
+# Initial Commit : 23:44, 08 July 2021
+# Author: Oluwafemi Oreoluwa
+
+from tkinter import *
+
+class Application(Frame):
+    """GUI Class for the Calculator"""
+    def __init__(self,master):
+        super(Application,self).__init__(master)
+        self.grid()
+        self.widget_king()
+
+        
