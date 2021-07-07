@@ -1,5 +1,5 @@
 # Program: A Basic Calculator built with Python
-# Initial Commit : 23:44, 08 July 2021
+# First Commit : 23:44, 07 July 2021
 # Author: Oluwafemi Oreoluwa
 
 from tkinter import *
