@@ -9,6 +9,45 @@ class Application(Frame):
     def __init__(self,master):
         super(Application,self).__init__(master)
         self.grid()
-        self.widget_king()
+        self.calc_widgets()
 
-        
+    def calc_widgets(self):
+        #self.buttonlist=["1","2","3","4","5","6","7","8","9"]
+        #self.buttontray=[]
+
+        #Calculator GUI Label
+        Label(self,text="Basic Calculator").grid(row=0,column=0,sticky=W)
+        self.textbox=Text(self,height=6,width=85,wrap=WORD)
+        self.textbox.grid(row=7,column=0,columnspan=3)
+
+        #Numeric Digits
+        #Button(self,text="7").grid(row=9,column=0,sticky=W)
+        #Button(self,text="8").grid(row=9,column=0)
+        #Button(self,text="6").grid(row=4,column=0,sticky=W)
+        #Button(self,text="5").grid(row=4,column=1,sticky=W)
+        #Button(self,text="4").grid(row=4,column=0,sticky=W)
+        #Button(self,text="3").grid(row=4,column=1,sticky=W)
+        #B utton(self,text="2").grid(row=4,column=0,sticky=W)
+        #Button(self,text="1").grid(row=4,column=1,sticky=W)
+        #Button(self,text="0").grid(row=4,column=0,sticky=W)
+
+        # Arithmetic Operations
+        #Button(self,text="+").grid(row=4,column=1,sticky=W)
+        #Button(self,text="-").grid(row=4,column=0,sticky=W)
+        #Button(self,text="/").grid(row=4,column=1,sticky=W)
+        #Button(self,text="x").grid(row=4,column=0,sticky=W)
+        #Button(self,text="=").grid(row=4,column=1,sticky=W)
+        #Button(self,text="+/-").grid(row=4,column=1,sticky=W)
+
+        #Text Erase Button. button name is "clear"
+        #Button(self,text="Clear").grid(row=4,column=1,sticky=W)
+
+
+#main 
+
+root=Tk()
+root.title("Calculator")
+root.geometry("500x700")
+okay=Application(root)
+
+root.mainloop()
