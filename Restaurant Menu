@@ -1,1 +1,13 @@
 #GUI for Restaurant Menu
+from tkinter import *
+class Restaurant(Frame):
+    def __init__(self):
+        print("Okay great it works")
+
+
+
+#Main program
+root=Tk()
+root.title("Spar Menu")
+root.geometry(400*400)
+okay=Restaurant(root)
