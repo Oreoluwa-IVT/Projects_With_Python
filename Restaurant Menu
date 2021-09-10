@@ -1,7 +1,7 @@
 #GUI for Restaurant Menu
 from tkinter import *
 class Restaurant(Frame):
-    def __init__(self):
+    def __init__(self,master):
         print("Okay great it works")
 
 
