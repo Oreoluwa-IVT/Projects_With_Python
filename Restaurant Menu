@@ -2,12 +2,23 @@
 from tkinter import *
 class Restaurant(Frame):
     def __init__(self,master):
+        super(Restaurant,self).__init__(master)
+        self.grid()
+        self.reswidget()
         print("Okay great it works")
+        
+    
+    def reswidget(self):
+        self.lbl=Label(self,text="You are What you Eat , Select who you are !")
+        self.lbl.grid()
 
 
 
 #Main program
 root=Tk()
 root.title("Spar Menu")
-root.geometry(400*400)
+root.geometry("400x400")
 okay=Restaurant(root)
+
+
+root.mainloop()
