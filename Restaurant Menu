@@ -11,7 +11,7 @@ class Restaurant(Frame):
     
     def reswidget(self):
         self.lbl=Label(self,text="You are What you Eat , Select What you are !".upper())
-        self.lbl.grid() 
+        self.lbl.grid(row=0,column=0,sticky= W) 
         self.bttn=Button(self,text="View Menu")
         self.bttn["command"]= self.menudisplay
         self.bttn.grid(row=2, column=0, sticky=W)
@@ -24,14 +24,13 @@ class Restaurant(Frame):
         self.text.grid(row=6 ,column =0,columnspan=3, sticky= W)
 
         
-    
-        
+           
 
 
 #Main program
 root=Tk()
 root.title("Spar Menu")
-root.geometry("400x400")
+root.geometry("700x600")
 okay=Restaurant(root)
 
 
