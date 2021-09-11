@@ -10,9 +10,22 @@ class Restaurant(Frame):
         
     
     def reswidget(self):
-        self.lbl=Label(self,text="You are What you Eat , Select who you are !")
-        self.lbl.grid()
+        self.lbl=Label(self,text="You are What you Eat , Select What you are !".upper())
+        self.lbl.grid() 
+        self.bttn=Button(self,text="View Menu")
+        self.bttn["command"]= self.menudisplay
+        self.bttn.grid(row=2, column=0, sticky=W)
 
+        
+    def menudisplay(self):
+        self.lbl2=Label(self,text="Please choose from the Listed Items Below")
+        self.lbl2.grid(row=4, column=0 ,sticky= W)
+        self.text=Text(self, width= 20, height= 30 , wrap=WORD,)
+        self.text.grid(row=5 ,column =0,columnspan=3, sticky= W)
+
+        
+    
+        
 
 
 #Main program
