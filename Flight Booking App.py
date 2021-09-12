@@ -11,9 +11,9 @@ class Restaurant(Frame):
         self.pw_ent=Entry(self)
         self.pw_ent.grid(row=1,column=1,sticky=W)
         self.lbl2=Label(self,text="Password")
-        self.lbl2.grid(row=2,column=1, sticky=W)
+        self.lbl2.grid(row=2,column=0, sticky=W)
         self.pw_ent2=Entry(self)
-        self.pw_ent2.grid(row=3,column=0,sticky=W)
+        self.pw_ent2.grid(row=2,column=1,sticky=W)
         self.submit_bttn=Button(self,text="Submit",command=self.reveal) #command here simply triggers the event handler
         self.submit_bttn.grid(row=4,column=0, sticky=W)
         self.secret_txt=Text(self,width=35,height=5,wrap=WORD) #wrap WORD here simply means that once you get the end of the line , 
