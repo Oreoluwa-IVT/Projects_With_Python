@@ -20,6 +20,11 @@ class Restaurant(Frame):
         """Display message based on password"""
         contents=self.pw_ent.get() #this get() method simply gets the values from the pw_ent variable assigned to the Entry Widget
         
+        if contents=="secret":
+            message="Flight Ticket No: 1538438 \n Ticket Owner: James Okunde \n Ticket Price: $540"
+        
+        else:
+            message="Invalid Credentials. Make sure your details are entered correctly"
 
 root=Tk()
 root.geometry=("400X400")
