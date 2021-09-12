@@ -30,6 +30,8 @@ class Restaurant(Frame):
         # all i need to do now is insert it into the Text Widget.
         
         self.secret_txt.delete(0.0,END)
+        # this simply means that the delete method will delete anytext from  the position 0.0 till the end point
+        # note: 0.0 means the delete method will delete any text from column 0 and row 0
 
 root=Tk()
 root.geometry=("400X400")
