@@ -16,7 +16,7 @@ class survey(Frame):
         self.q4=Label(self,text="Gender").grid(row=7,column=0,sticky=W)
         self.checkb=["male","female"]
         Checkbutton(self,text="Male",command=self.male).grid(row=8,column=0,sticky=W)
-        Checkbutton(self,text="Female",command=self.female).grid(row=8,column=0,sticky=W)
+        Checkbutton(self,text="Female",command=self.female).grid(row=9,column=0,sticky=W)
         
         
     
