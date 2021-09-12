@@ -22,16 +22,22 @@ class Restaurant(Frame):
         
         if contents=="secret":
             message="Flight Ticket No: 1538438 \n Ticket Owner: James Okunde \n Ticket Price: $540"
-        
         else:
-            message="Invalid Credentials. Make sure your details are entered correctly"
-            
+            message="Invalid Credentials. Make sure your details are entered correctly"  
         #now that I have the string that I want to show to the user , all I 
         # all i need to do now is insert it into the Text Widget.
-        
+    
+    
         self.secret_txt.delete(0.0,END)
         # this simply means that the delete method will delete anytext from  the position 0.0 till the end point
         # note: 0.0 means the delete method will delete any text from column 0 and row 0
+        
+        self.secret_txt.insert(0.0,contents)
+        #this method simply inserts the text assisnged to the "message" variable into the Text widget
+        
+
+
+
 
 root=Tk()
 root.geometry=("400X400")
