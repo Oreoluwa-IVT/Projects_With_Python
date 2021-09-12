@@ -20,8 +20,11 @@ class Restaurant(Frame):
     def menudisplay(self):
         self.lbl2=Label(self,text="Please choose from the Listed Items Below")
         self.lbl2.grid(row=5, column=0 ,sticky= W)
-        self.text=Text(self, width= 70, height= 30 , wrap=WORD,)
+        self.text=Text(self, widthl= 70, height= 30 , wrap=WORD,)
         self.text.grid(row=6 ,column =0,columnspan=3, sticky= W)
+        self.text.insert(0.0,)
+        
+        
 
         
            
