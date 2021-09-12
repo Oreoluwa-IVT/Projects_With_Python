@@ -6,6 +6,7 @@ class Restaurant(Frame):
         self.createwidget()
         
     def createwidget(self):
+        self.lbl=Label(self,text="Please Enter Your Credentials Accurately")
         self.lbl=Label(self,text="Username")
         self.lbl.grid(row=1,column=0, sticky=W)
         self.pw_ent=Entry(self)
