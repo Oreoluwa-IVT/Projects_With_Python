@@ -7,8 +7,8 @@ class survey(Frame):
     
     def createsurvey(self):
         self.lbl=Label(self,text="Please Answer the Survey Appropriately, Thanks you").grid(row=0,column=0)
-        self.q1=Label(self,text="Your Full Name").grid(row=0,column=0)
-        self.a1=Entry(self).grid(row=1,column=0)
+        self.q1=Label(self,text="Your Full Name").grid(row=1,column=0, sticky=W)
+        self.a1=Entry(self).grid(row=2,column=0, sticky=W)
 
 
 
