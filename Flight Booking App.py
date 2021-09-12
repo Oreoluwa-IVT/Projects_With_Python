@@ -17,7 +17,7 @@ class Restaurant(Frame):
         self.pw_ent2.grid(row=2,column=1,sticky=W)
         self.submit_bttn=Button(self,text="Submit",command=self.reveal) #command here simply triggers the event handler
         self.submit_bttn.grid(row=4,column=0, sticky=W)
-        self.secret_txt=Text(self,width=35,height=5,wrap=WORD) #wrap WORD here simply means that once you get the end of the line , 
+        self.secret_txt=Text(self,width=25,height=5,wrap=WORD) #wrap WORD here simply means that once you get the end of the line , 
         #the next word you type goes to the next line
         self.secret_txt.grid(row=9,column=0,columnspan=2,sticky=W)
         
@@ -37,7 +37,7 @@ class Restaurant(Frame):
         # this simply means that the delete method will delete anytext from  the position 0.0 till the end point
         # note: 0.0 means the delete method will delete any text from column 0 and row 0
         
-        self.secret_txt.insert(0.0,contents)
+        self.secret_txt.insert(0.0,message)
         #this method simply inserts the text assisnged to the "message" variable into the Text widget
         
 
