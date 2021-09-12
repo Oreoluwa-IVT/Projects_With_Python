@@ -25,6 +25,11 @@ class Restaurant(Frame):
         
         else:
             message="Invalid Credentials. Make sure your details are entered correctly"
+            
+        #now that I have the string that I want to show to the user , all I 
+        # all i need to do now is insert it into the Text Widget.
+        
+        self.secret_txt.delete(0.0,END)
 
 root=Tk()
 root.geometry=("400X400")
