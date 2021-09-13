@@ -14,18 +14,12 @@ class survey(Frame):
         self.q3=Label(self,text="Residence").grid(row=5,column=0,sticky=W)
         self.a3=Entry(self).grid(row=6,column=0,sticky=W)
         self.q4=Label(self,text="Gender").grid(row=7,column=0,sticky=W)
-        self.checkb=["male","female"]
-        Checkbutton(self,text="Male",command=self.male).grid(row=8,column=0,sticky=W)
-        Checkbutton(self,text="Female",command=self.female).grid(row=9,column=0,sticky=W)
+        self.checkm=BooleanVar()
+        self.checkf=BooleanVar()
+        Checkbutton(self,text="Male",variable=self.checkm,command=self.male).grid(row=8,column=0,sticky=W)
+        Checkbutton(self,text="Female",variable=self.checkf,command=self.female).grid(row=8,column=0,sticky=W)
         
-        
-    
-        
-    def male(self):
-        print("male")
-    
-    def female(self):
-        print("female")
+
         
         
         
