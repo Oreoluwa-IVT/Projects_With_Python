@@ -27,6 +27,7 @@ class survey(Frame):
         self.q6=Label(self,text="Your Religion").grid(row=17,column=0,sticky=W)
         self.a4=Entry(self).grid(row=18,column=0,sticky=W)
         self.ent=Text(self,width=40,height=0,wrap=WORD).grid(row=19,column=0,sticky=E)
+        self.bttn=Button(self,text="Submit",command=self.compose).grid(row=20,column=0,sticky=W)
         
     def getvalue(self):
        okay= self.fav.get()
@@ -42,6 +43,10 @@ class survey(Frame):
              
     def physics(self):
         print("Female")
+        
+    def compose(self):
+        sum="all"
+        self.ent.insert(0.0,sum)
         
         
     
