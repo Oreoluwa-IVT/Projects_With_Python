@@ -20,9 +20,9 @@ class survey(Frame):
         Radiobutton(self,text="Female",variable=self.fav,value="Female",command=self.getvalue).grid(row=9,column=0,sticky=W)
         self.checkm=BooleanVar()
         self.checkf=BooleanVar()
-        self.q5=Label(self,text="Courses").grid(row=7,column=0,sticky=W)
-        Checkbutton(self,text="",variable=self.checkm,command=self.male).grid(row=15,column=0,sticky=W)
-        Checkbutton(self,text="Female",variable=self.checkf,command=self.female).grid(row=16,column=0,sticky=W)
+        self.q5=Label(self,text="Courses").grid(row=12,column=0,sticky=W)
+        Checkbutton(self,text="Mathematics",variable=self.checkm,command=self.male).grid(row=15,column=0,sticky=W)
+        Checkbutton(self,text="Physics",variable=self.checkf,command=self.female).grid(row=16,column=0,sticky=W)
         self.q6=Label(self,text="Your Religion").grid(row=17,column=0,sticky=W)
         self.a4=Entry(self).grid(row=18,column=0,sticky=W)
         
