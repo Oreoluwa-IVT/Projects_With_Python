@@ -17,5 +17,7 @@ All with the help of Widgets like `Buttons`,`Entry`,`Text`and `Label`
 In this survery, we couldn't make the UI as fancy as Google forms and monkey survery, but it works.
 Try it out. You get to simply fill up the survery and get a communlative response based on your initial input.
 
+All with the help of Widgets like `Buttons`,`Entry`,`Text`, `Label` `CheckButtons` and  `Radio Buttons`
+
 
 
