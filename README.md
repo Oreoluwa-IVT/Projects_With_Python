@@ -28,5 +28,5 @@ purchase the ticket on the GUI.
 
 All with the help of Widgets like `Buttons`,`Entry`,`Text`,`Label` `CheckButtons` and  `Radio Buttons`
 
-
+ 
 
