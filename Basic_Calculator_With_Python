@@ -17,7 +17,7 @@ class Application(Frame):
 
         #Calculator GUI Label
         Label(self,text="Basic Calculator").grid(row=0,column=0,sticky=W)
-        self.textbox=Text(self,height=6,width=85,wrap=WORD)
+        self.textbox=Text(self,height=3,width=85,wrap=WORD)
         self.textbox.grid(row=7,column=0,columnspan=3)
 
         #Numeric Digits
@@ -47,7 +47,7 @@ class Application(Frame):
 
 root=Tk()
 root.title("Calculator")
-root.geometry("500x700")
+root.geometry("300x300")
 okay=Application(root)
 
 root.mainloop()
